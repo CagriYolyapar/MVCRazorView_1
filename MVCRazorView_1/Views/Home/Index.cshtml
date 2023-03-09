@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@*
+    
+Razor View Engine , MVC'nin mevcutta kullanmakta olduğu bir görüntüleme motorudur. Bu görüntüleme motoru sayesinde siz cshtml uzantılı sayfalarınıza C# dilinde kodlar yazabilir ve Browser'ların bunları html olarak render edebilmesini mümkün kılarsınız
+
+    Razor ifadeler @ sembolü ile gecilir...Yalnız tek satırlık ifadelerde bosluk bıraktıgınız anda HTML'e geri dönersiniz
+
+    Razor View ile tek satırlık kod ifadeleri yazıyorsanız noktalı virgül kullanılmaz...
+    Fakat biz her zaman tek satırlık bir C# ifadesi kullanmak istemeyebiliriz... BU tarz ifadeler verilecek ise bunlar Razor blogunda acılır... 
+    Aynı zamanda eger tek satırlık bir ifadeyi bir komut dizisi halinde vermek istiyorsanız @'ten sonra normal parantezleri kullanma imkanınız da vardır...Tabii ki burada anlamsallıgın bozulmamasına dikkat etmelisiniz
+
+    Bir Razor blogunda tekrar HTML'e gecmeniz mümkündür.Bir Razor blogu icerisinde bir HTML tag'i actıgınız anda o tagler arasında HTML'e dönersiniz...HTML'den tag'inden cıktıgınız anda tekrar C#'a geri dönersiniz... O ilgili HTML tag'i icerisinde tekrar C# kullanmak istiyorsanız tekrar @ sembolü acmanız gerekir...
+*@
+
+
+
+@{ 
+
+    int a = 4;
+    int b = 6;
+
+    <h1>Ben baslıgım</h1>
+    <p></p>
+
+
+    int c = 10;
+
+
+}
+
+
+
+
+<h2>Bugünün tarihi @DateTime.Now</h2>
+
+
+
+@for (int i = 0; i < 10; i++)
+{
+    <p>Selam</p>
+}
